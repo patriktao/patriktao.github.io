@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import getConfig from "next/config";
 import useScrollspy from "@/hooks/useScrollspy";
 import { Fade } from "react-awesome-reveal";
@@ -18,13 +18,25 @@ const ids = [
 const menuItemClass = `block text-gray-700 rounded md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:hover:bg-gradient-to-r from-green-400 to-[--color-theme] md:hover:bg-clip-text md:hover:text-transparent hover:scale-110 ease-out duration-100`;
 const selectedMenuItemClass = `block md:border-0 md:p-0 bg-gradient-to-r from-green-400 to-[--color-theme] bg-clip-text text-transparent`;
 
-const NavItem = ({ name, className }: { name: string; className?: string }) => (
-  <li>
-    <a href={`#${name.toLowerCase()}`} className={className}>
-      {name}
-    </a>
-  </li>
-);
+const NavItem = ({ name, className }: { name: string; className?: string }) => {
+  const handleClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <li>
+      <button
+        onClick={() => handleClick(name.toLowerCase())}
+        className={className}
+      >
+        {name}
+      </button>
+    </li>
+  );
+};
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 
@@ -44,12 +56,6 @@ const NavBar = () => {
     document.documentElement.classList.toggle("dark", currentTheme === "dark");
     setTheme(currentTheme);
   }, [setTheme]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      replaceState("Updated", activeId, `#${activeId}`);
-    }
-  }, [activeId]);
 
   const themeSwitch = () => {
     const newTheme = document.documentElement.classList.contains("dark")
