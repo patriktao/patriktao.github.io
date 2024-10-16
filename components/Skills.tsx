@@ -23,11 +23,11 @@ const Skills = (props: Props) => {
               text={
                 <ul>
                   <li>Agile Scrum</li>
+                  <li>Waterfall</li>
                   <li>Kanban</li>
                   <li>Product Strategy</li>
                   <li>UX Design</li>
                   <li>Requirement Engineering</li>
-                  <li>Configuration Management</li>
                 </ul>
               }
               icon={<FaCube />}
@@ -37,8 +37,9 @@ const Skills = (props: Props) => {
               text={
                 <ul>
                   <li>Javascript (Typescript)</li>
-                  <li>React (Native, NextJs)</li>
+                  <li>React (NextJs, Vite)</li>
                   <li>HTML/CSS/Tailwind</li>
+                  <li>React Native</li>
                   <li>Redux</li>
                 </ul>
               }
@@ -48,12 +49,12 @@ const Skills = (props: Props) => {
               header="Backend"
               text={
                 <ul>
-                  <li>Java</li>
+                  <li>Java (JDBC)</li>
+                  <li>C Programming</li>
+                  <li>Python (Flask)</li>
                   <li>NodeJs (Express)</li>
-                  <li>Python (Django)</li>
-                  <li>PostgreSQL</li>
-                  <li>Firebase</li>
-                  <li>AWS S3</li>
+                  <li>PostgreSQL/MySQL</li>
+                  <li>Firebase/Supabase</li>
                 </ul>
               }
               icon={<FaCodeBranch />}
@@ -63,10 +64,14 @@ const Skills = (props: Props) => {
               text={
                 <ul>
                   <li>Python</li>
-                  <li>R</li>
+                  <li>R Programming</li>
+                  <li>Pytorch</li>
+                  <li>Tensorflow</li>
+                  <li>LLM</li>
+                  <li>Applied ML</li>
                   <li>Excel</li>
-                  <li>MatLab</li>
                   <li>Haskell</li>
+                  <li>Clojure</li>
                 </ul>
               }
               icon={<BsClipboardDataFill />}
@@ -76,11 +81,12 @@ const Skills = (props: Props) => {
               icon={<FaEdit />}
               text={
                 <ul>
+                  <li>AWS S3</li>
                   <li>Docker</li>
                   <li>Git/Github</li>
                   <li>Figma</li>
                   <li>Wordpress</li>
-                  <li>Webpack</li>
+                  <li>OpenAI API</li>
                 </ul>
               }
             />

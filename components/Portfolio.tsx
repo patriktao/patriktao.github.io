@@ -8,6 +8,7 @@ import Link from "next/link";
 import { FaFigma, FaGithub, FaLeaf } from "react-icons/fa";
 import Icons from "./icons/Icons";
 import PortfolioItem from "./PortfolioItem";
+import lectureai from "../images/lectureai.png";
 import illustration2 from "../images/illustration2.png";
 import voicy from "../images/voicy.png";
 import { Fade } from "react-awesome-reveal";
@@ -29,6 +30,35 @@ const Portfolio = (props: Props) => {
         title="wrapper"
         className="flex flex-wrap md:flex-nowrap md:flex-col lg:max-w-5xl gap-y-24"
       >
+        <Fade duration={2000} triggerOnce>
+          <PortfolioItem
+            direction="right"
+            date="Oct 2024 - Present"
+            header={<>Lecture AI</>}
+            subheader={`Building an AI-powered tool to complement learning by generating audio-lectures based on uploaded PDF slides. Master every complex topic by selecting desired explanation level, save time, boost productivity, and accelerate knowledge intake and retention`}
+            icons={
+              <div className="flex flex-row gap-x-4 h-8">
+                <Icons.ReactIcon />
+                <Icons.ViteIcon />
+                <Icons.ExpressIcon />
+                <Icons.NodeIcon />
+                <Icons.TsIcon />
+                <Icons.DockerIcon />
+                <Icons.S3Icon />
+                <Icons.OpenAiIcon />
+                <Icons.PostgreIcon />
+                <Icons.SupaBaseIcon />
+              </div>
+            }
+            image={
+              <Image
+                src={lectureai}
+                alt="lecture-AI"
+                className="grid-span-1 hidden sm:block"
+              />
+            }
+          />
+        </Fade>
         <Fade duration={2000} triggerOnce>
           <PortfolioItem
             date="May 2023"
