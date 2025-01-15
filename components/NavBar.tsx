@@ -15,7 +15,7 @@ const ids = [
   "portfolio",
 ];
 
-const menuItemClass = `text-lg font-medium md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:hover:bg-gradient-to-r from-green-400 to-[--color-theme] md:hover:bg-clip-text md:hover:text-transparent`;
+const menuItemClass = `text-lg font-medium md:hover:bg-transparent md:border-0 md:p-0  md:hover:bg-gradient-to-r from-green-400 to-[--color-theme] md:hover:bg-clip-text md:hover:text-transparent`;
 const selectedMenuItemClass = `text-lg underline font-medium md:border-0 md:p-0`;
 
 const NavItem = ({ name, className }: { name: string; className?: string }) => {
@@ -41,37 +41,17 @@ const NavItem = ({ name, className }: { name: string; className?: string }) => {
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 
 const NavBar = () => {
-  const { getTheme, setTheme } = useContext(ThemeContext);
   const { publicRuntimeConfig } = getConfig();
   const pdfPath = publicRuntimeConfig.PDF_PATH;
 
   const activeId = useScrollspy(ids, 300);
 
-  useEffect(() => {
-    const currentTheme =
-      localStorage.theme ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light");
-    document.documentElement.classList.toggle("dark", currentTheme === "dark");
-    setTheme(currentTheme);
-  }, [setTheme]);
-
-  const themeSwitch = () => {
-    const newTheme = document.documentElement.classList.contains("dark")
-      ? "light"
-      : "dark";
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
-    localStorage.setItem("theme", newTheme);
-    setTheme(newTheme);
-  };
-
   return (
     <nav className="fixed left-0 w-full z-50 border border-t-0 border-neutral-150 white/10">
-      <div className="px-5 backdrop-blur-[12px] bg-white dark:bg-gray-700">
+      <div className="px-5 backdrop-blur-[12px] bg-white">
         <div className="flex w-full justify-between items-center h-14">
           <a href="#home">
-            <span className="text-xl font-semibold whitespace-nowrap dark:text-white text-black hover:bg-gradient-to-r hover:from-green-400 hover:to-[--color-theme] hover:bg-clip-text hover:text-transparent hover:scale-110 ease-out duration-100">
+            <span className="text-xl font-semibold whitespace-nowrap text-black hover:bg-gradient-to-r hover:from-green-400 hover:to-[--color-theme] hover:bg-clip-text hover:text-transparent hover:scale-110 ease-out duration-100">
                 {">"} Patrik Thomas Tao
             </span>
           </a>

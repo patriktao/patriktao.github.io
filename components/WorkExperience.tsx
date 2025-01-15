@@ -13,7 +13,7 @@ const WorkExperience = (props: Props) => {
             Work Experience
           </h1>
           <Slide duration={1000}>
-            <ol className="border-l border-neutral-300 dark:border-neutral-500 md:flex md:justify-center md:gap-6 md:border-l-0 md:border-t">
+            <ol className="border-l border-neutral-300 md:flex md:justify-center md:gap-6 md:border-l-0 md:border-t">
               <Timepoint date="Aug 2019" title="University Start" />
               <Timepoint
                 date="Mar 2021 - Nov 2021"

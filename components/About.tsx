@@ -8,16 +8,16 @@ type Props = {};
 const infoSection = (
   <Fade cascade damping={0.1} duration={1000} triggerOnce direction="up">
     <h1 className="text-5xl md:text-7xl font-bold tracking-tight">About Me</h1>
-    <p className="mt-2 text-lg font-regular leading-6 text-zinc-500 dark:text-white">
+    <p className="mt-2 text-lg font-regular leading-6 text-zinc-500">
       Software Engineer, Tech Program Manager, and Innovator
     </p>
-    <p className="mt-6 mb-6 font-regular text-lg leading-8 dark:text-zinc-300 text-zinc-700">
+    <p className="mt-6 mb-6 font-regular text-lg leading-8 text-zinc-700">
       I was born in Helsingborg, a coastal city located in the southern part of
       Sweden. Since discovering my first programming class in high school, I
       have been captivated by the art of coding and the ability to create
       products that have social impact.
     </p>
-    <p className="mt-6 mb-6 text-lg font-regular leading-8 dark:text-zinc-300 text-zinc-700">
+    <p className="mt-6 mb-6 text-lg font-regular leading-8 text-zinc-700">
       In my free time, I channel my creativity and imagination into making
       music, experimenting in the kitchen, exploring new places through travel,
       and dreaming up my next creative endeavor.

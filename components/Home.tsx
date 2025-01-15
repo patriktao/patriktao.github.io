@@ -21,7 +21,7 @@ type TypedTextProps = {
 
 const ClickableIcon = ({ children }: Icon) => {
   return (
-    <div className="rounded-full text-2xl shadow-none dark:shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 dark:bg-white hover:bg-gradient-to-r hover:from-green-400 hover:to-[--color-theme] shadow-lg">
+    <div className="rounded-full text-2xl shadow-none shadow-gray-300 p-3 cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 hover:bg-gradient-to-r hover:from-green-400 hover:to-[--color-theme] shadow-lg">
       {children}
     </div>
   );
@@ -62,7 +62,7 @@ const InfoSection = (
     className="flex justify-left 2xl:justify-center max-w-3xl text-left 2xl:text-center"
   >
     {/* Header */}
-    <p className="font-semibold text-7xl lg:text-8xl dark:text-white mb-3">
+    <p className="font-semibold text-7xl lg:text-8xl mb-3">
       Hi, I am <br />
       <TypedText
         strings={[
@@ -74,13 +74,13 @@ const InfoSection = (
       />
     </p>
     {/* Text */}
-    <p className="text-xl text-zinc-500 dark:text-gray-300 max-w-2xl">
+    <p className="text-xl text-zinc-500 max-w-2xl">
       I combine my software engineering expertise and technical project
       management skills to create and drive innovative products.
     </p>
 
     {/* List */}
-    <div className="mt-4 text-sm font-semibold uppercase text-zinc-900 dark:text-white">
+    <div className="mt-4 text-sm font-semibold uppercase text-zinc-900 ">
       <p className="my-1">M.Sc.Eng, Computer Science and Engineering</p>
       <p className="my-1">Specialization: Software Engineering</p>
       <p className="my-1">Lund University, Sweden</p>
@@ -96,7 +96,7 @@ const InfoSection = (
         rel="noreferrer"
       >
         <ClickableIcon>
-          <FaEnvelope className="text-white dark:text-black" />
+          <FaEnvelope className="text-white" />
         </ClickableIcon>
       </a>
       <a
@@ -105,12 +105,12 @@ const InfoSection = (
         rel="noreferrer"
       >
         <ClickableIcon>
-          <FaLinkedinIn className="text-white dark:text-black" />
+          <FaLinkedinIn className="text-white" />
         </ClickableIcon>
       </a>
       <a href="https://github.com/patriktao" target="_blank" rel="noreferrer">
         <ClickableIcon>
-          <FaGithub className="text-white dark:text-black" />
+          <FaGithub className="text-white" />
         </ClickableIcon>
       </a>
     </div>

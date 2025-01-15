@@ -13,7 +13,7 @@ const Extracurricular = (props: Props) => {
             Extracurricular
           </h1>
           <Slide duration={1000} direction="right">
-            <ol className="border-l border-neutral-300 dark:border-neutral-500 md:flex md:justify-center md:gap-6 md:border-l-0 md:border-t">
+            <ol className="border-l border-neutral-300 md:flex md:justify-center md:gap-6 md:border-l-0 md:border-t">
               <Timepoint
                 date="2019"
                 title="Member"

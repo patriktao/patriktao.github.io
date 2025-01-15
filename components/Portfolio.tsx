@@ -70,9 +70,9 @@ const Portfolio = (props: Props) => {
               <Link
                 href="https://github.com/patriktao/portfolio"
                 target="_blank"
-                className="rounded-full text-2xl shadow-none dark:shadow-lg shadow-gray-300 p-[5px] cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 dark:bg-white hover:bg-gradient-to-r hover:from-green-400 hover:to-[--color-theme] shadow-lg"
+                className="rounded-full text-2xl shadow-none  shadow-gray-300 p-[5px] cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 hover:bg-gradient-to-r hover:from-green-400 hover:to-[--color-theme] shadow-lg"
               >
-                <FaGithub className="text-white dark:text-black" />
+                <FaGithub className="text-white" />
               </Link>
             }
             icons={
@@ -102,9 +102,9 @@ const Portfolio = (props: Props) => {
               <Link
                 href="https://github.com/patriktao/Next-MemberFlow/tree/development"
                 target="_blank"
-                className="rounded-full text-2xl shadow-none dark:shadow-lg shadow-gray-300 p-[5px] cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 dark:bg-white hover:bg-gradient-to-r hover:from-teal-500 hover:to-teal-300 shadow-lg"
+                className="rounded-full text-2xl shadow-none shadow-gray-300 p-[5px] cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 hover:bg-gradient-to-r hover:from-teal-500 hover:to-teal-300 shadow-lg"
               >
-                <FaGithub className="text-white dark:text-black" />
+                <FaGithub className="text-white" />
               </Link>
             }
             subheader={`This cross-platform web- and mobile application addresses the
@@ -221,9 +221,9 @@ const Portfolio = (props: Props) => {
               <Link
                 href="https://www.figma.com/proto/eFKz2QPZf7d0aSfBHcGGBV/EcoFinder?node-id=28-1874&scaling=scale-down&page-id=0%3A1&starting-point-node-id=28%3A1874"
                 target="_blank"
-                className="rounded-full text-2xl shadow-none dark:shadow-lg shadow-gray-300 p-[5px] cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 dark:bg-white hover:bg-gradient-to-r hover:from-red-500 hover:to-red-300 shadow-lg"
+                className="rounded-full text-2xl shadow-none shadow-gray-300 p-[5px] cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-300 shadow-lg"
               >
-                <FaFigma className="text-white dark:text-black hidden sm:block" />
+                <FaFigma className="text-white hidden sm:block" />
               </Link>
             }
             subheader={`This app was designed to help people buy the most environmentally friendly option in grocery stores in Sweden. We collect data from food listed on Swedish grocery stores and compare their eco-friendliness based on various metrics such as travel distance, organic, KRAV, EU Ecolabel, Fairtrade, and more. Gain bonus-points by buying the most environmental alternative and use them to unlock discounts.`}
