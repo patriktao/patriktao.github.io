@@ -35,7 +35,7 @@ const About = (props: Props) => {
   return (
     <section
       id="about"
-      className="block grid relative lg:mt-0 opacity-1 transform-none bg-[#f7f7f7]"
+      className="block grid relative lg:mt-0 opacity-1 px-[2rem] transform-none bg-[#f7f7f7]"
     >
       <div className=" max-w-5xl mx-auto gap-x-12 items-center">
         <div title="info-section">{infoSection}</div>

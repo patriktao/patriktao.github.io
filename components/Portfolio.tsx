@@ -19,7 +19,7 @@ const Portfolio = (props: Props) => {
   return (
     <section
       id="portfolio"
-      className="flex flex-col w-full md:items-center content-center"
+      className="flex flex-col w-full md:items-center content-center px-[2rem]"
     >
       <Fade triggerOnce>
         <h1 className="font-bold text-5xl md:text-7xl text-left md:mb-24 mb-8 lg:text-center">

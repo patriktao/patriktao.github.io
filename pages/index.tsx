@@ -17,10 +17,8 @@ export default function MyPortfolio() {
           <Home />
           <About />
           <Skills />
-          <div className="pl-[1rem]">
-            <WorkExperience />
-            <Extracurricular />
-          </div>
+          <WorkExperience />
+          <Extracurricular />
           <Portfolio />
         </div>
       </main>

@@ -30,8 +30,8 @@ const ClickableIcon = ({ children }: Icon) => {
 const TypedText: React.FC<TypedTextProps> = ({
   strings,
   typeSpeed = 60,
-  backSpeed = 30,
-  loop = false,
+  backSpeed = 40,
+  loop = true,
 }) => {
   const typedRef = useRef<HTMLSpanElement>(null);
 
@@ -59,18 +59,13 @@ const InfoSection = (
     damping={0.1}
     duration={1500}
     triggerOnce
-    className="flex justify-left 2xl:justify-center max-w-3xl text-left 2xl:text-center"
+    className="max-w-[70rem] flex justify-left 2xl:justify-center text-left 2xl:text-center"
   >
     {/* Header */}
     <p className="font-semibold text-7xl lg:text-8xl mb-3">
       Hi, I am <br />
       <TypedText
-        strings={[
-          "Patrik.",
-          "a Software Engineer.",
-          "an Innovator.",
-          "Patrik.",
-        ]}
+        strings={["Patrik.", "a Software Engineer.", "an Innovator."]}
       />
     </p>
     {/* Text */}
@@ -132,10 +127,12 @@ const Home = (props: Props) => {
   return (
     <section
       id="home"
-      className="h-[850px] pt-[120px] lg:pt-[250px] flex justify-center p-0"
+      className="min-h-[850px] pt-[120px] lg:pt-[250px] flex justify-center px-[2rem]"
     >
-      <div className="max-w-10xl flex flex-col lg:flex-row gap-10 justify-center text-center">
-        <div className="md:col-span-4 lg:col-span-8">{InfoSection}</div>
+      <div className="flex flex-col 2xl:flex-row gap-y-12 justify-center text-center">
+        <div className="2xl:w-[900px] h-9xl md:col-span-4 lg:col-span-8">
+          {InfoSection}
+        </div>
         <div>{ImageSection}</div>
       </div>
     </section>
