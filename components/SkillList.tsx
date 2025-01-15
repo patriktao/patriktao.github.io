@@ -13,7 +13,7 @@ const SkillList = (props: Props) => {
       <div className="text-3xl mb-4 text-gray-500 dark:text-gray-400">
         {props.icon}
       </div>
-      <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+      <h5 className="mb-2 text-2xl font-semibold text-gray-900 dark:text-white">
         {props.header}
       </h5>
       <div className="mb-3 text-md text-gray-800 dark:text-gray-300">

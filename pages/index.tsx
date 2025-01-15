@@ -11,14 +11,16 @@ import Home from "@/components/Home";
 export default function MyPortfolio() {
   return (
     <Background>
-      <main className="pl-[2rem] pr-[2rem] h-min-screen w-max-screen">
+      <main className="h-min-screen w-max-screen">
         <NavBar />
         <div className="z-10 flex flex-col">
           <Home />
           <About />
           <Skills />
-          <WorkExperience />
-          <Extracurricular />
+          <div className="pl-[1rem]">
+            <WorkExperience />
+            <Extracurricular />
+          </div>
           <Portfolio />
         </div>
       </main>

@@ -21,14 +21,14 @@ const PortfolioItem = ({
 }: Props) => {
   const content = (
     <div className="grid-span-1">
-      <p className="mb-1 text-neutral-500 dark:text-neutral-300">{date}</p>
+      <p className="mb-1 text-zinc-500 dark:text-neutral-300">{date}</p>
       <div className="flex items-center mb-4 gap-x-2">
-        <h2 className="text-3xl font-bold dark:text-white text-gray-700">
+        <h2 className="text-3xl font-bold dark:text-white text-zinc-700">
           {header}
         </h2>
         {headerIcon}
       </div>
-      <p className="text-lg font-normal mb-10 dark:text-gray-300 text-gray-800">{subheader}</p>
+      <p className="text-lg font-normal mb-10 dark:text-gray-300 text-zinc-800">{subheader}</p>
       {icons}
     </div>
   );

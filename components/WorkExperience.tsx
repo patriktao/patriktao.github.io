@@ -6,10 +6,10 @@ type Props = {};
 
 const WorkExperience = (props: Props) => {
   return (
-    <section id="experience">
+    <section id="experience" className="bg-[#f6f6f6]">
       <div>
         <Fade duration={2000} triggerOnce>
-          <h1 className="mb-12 text-5xl md:text-7xl text-left lg:ml-[10%] font-bold  bg-gradient-to-r from-green-400 to-[--color-theme] bg-clip-text text-transparent">
+          <h1 className="mb-12 text-5xl md:text-7xl text-left lg:ml-[10%] font-bold">
             Work Experience
           </h1>
           <Slide duration={1000}>

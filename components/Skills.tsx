@@ -12,22 +12,21 @@ const Skills = (props: Props) => {
       id="skills"
       className="grid justify-start lg:justify-center text-center mt-44 md:mt-0"
     >
-      <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-1 lg:gap-y-10">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-1 lg:gap-y-10">
         <Fade duration={1000} triggerOnce cascade damping={0.1}>
-          <h1 className="text-5xl md:text-7xl font-bold text-center md:text-left lg:text-center bg-gradient-to-r from-green-400 to-[--color-theme] bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold text-center md:text-left lg:text-center">
             Skills
           </h1>
-          <div className="flex-wrap flex gap-y-8 gap-x-12">
+          <div className="flex-wrap flex gap-y-8 gap-x-28">
             <SkillList
-              header="Project & Product"
+              header="Product"
               text={
                 <ul>
+                  <li>Product Management</li>
+                  <li>Requirement Engineering</li>
+                  <li>User Experience & Usability</li>
                   <li>Agile Scrum</li>
                   <li>Waterfall</li>
-                  <li>Kanban</li>
-                  <li>Product Strategy</li>
-                  <li>UX Design</li>
-                  <li>Requirement Engineering</li>
                 </ul>
               }
               icon={<FaCube />}
@@ -36,11 +35,11 @@ const Skills = (props: Props) => {
               header="Frontend"
               text={
                 <ul>
-                  <li>Javascript (Typescript)</li>
-                  <li>React (NextJs, Vite)</li>
-                  <li>HTML/CSS/Tailwind</li>
+                  <li>Javascript, Typescript</li>
+                  <li>React, NextJs, Vite</li>
+                  <li>HTML, CSS, Tailwind</li>
                   <li>React Native</li>
-                  <li>Redux</li>
+                  <li>State Management</li>
                 </ul>
               }
               icon={<BsCodeSquare />}
@@ -49,12 +48,14 @@ const Skills = (props: Props) => {
               header="Backend"
               text={
                 <ul>
-                  <li>Java (JDBC)</li>
-                  <li>C Programming</li>
-                  <li>Python (Flask)</li>
-                  <li>NodeJs (Express)</li>
-                  <li>PostgreSQL/MySQL</li>
-                  <li>Firebase/Supabase</li>
+                  <li>Java</li>
+                  <li>C</li>
+                  <li>Python</li>
+                  <li>NodeJs, Express</li>
+                  <li>PostgreSQL, MySQL</li>
+                  <li>Firebase, Supabase</li>
+                  <li>Compilers</li>
+                  <li>AWS S3</li>
                 </ul>
               }
               icon={<FaCodeBranch />}
@@ -64,12 +65,11 @@ const Skills = (props: Props) => {
               text={
                 <ul>
                   <li>Python</li>
-                  <li>R Programming</li>
+                  <li>R</li>
                   <li>Pytorch</li>
                   <li>Tensorflow</li>
                   <li>LLM</li>
                   <li>Applied ML</li>
-                  <li>Excel</li>
                   <li>Haskell</li>
                   <li>Clojure</li>
                 </ul>
@@ -81,9 +81,8 @@ const Skills = (props: Props) => {
               icon={<FaEdit />}
               text={
                 <ul>
-                  <li>AWS S3</li>
                   <li>Docker</li>
-                  <li>Git/Github</li>
+                  <li>Git, Github</li>
                   <li>Figma</li>
                   <li>Wordpress</li>
                   <li>OpenAI API</li>

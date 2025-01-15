@@ -6,10 +6,10 @@ type Props = {};
 
 const Extracurricular = (props: Props) => {
   return (
-    <section id="extracurricular" className=" lg:mx-0 overflow-hidden">
+    <section id="extracurricular" className=" lg:mx-0 mt-[3rem] bg-[#f6f6f6] overflow-hidden">
       <div>
         <Fade duration={2000} triggerOnce>
-          <h1 className="mb-12 text-4xl sm:text-7xl text-left lg:text-right lg:mr-[20%] font-bold  bg-gradient-to-r from-green-400 to-[--color-theme] bg-clip-text text-transparent ">
+          <h1 className="mb-12 text-4xl sm:text-7xl text-left lg:text-right lg:mr-[20%] font-bold">
             Extracurricular
           </h1>
           <Slide duration={1000} direction="right">

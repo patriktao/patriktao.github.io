@@ -22,7 +22,7 @@ const Portfolio = (props: Props) => {
       className="flex flex-col w-full md:items-center content-center"
     >
       <Fade triggerOnce>
-        <h1 className="font-bold text-5xl md:text-7xl text-left md:mb-24 mb-8 lg:text-center bg-gradient-to-r from-green-400 to-[--color-theme] bg-clip-text text-transparent">
+        <h1 className="font-bold text-5xl md:text-7xl text-left md:mb-24 mb-8 lg:text-center">
           Portfolio
         </h1>
       </Fade>

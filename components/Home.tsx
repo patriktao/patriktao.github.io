@@ -1,18 +1,9 @@
-import Link from "next/link";
-import { BsEnvelope, BsFillPersonLinesFill } from "react-icons/bs";
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaDownload,
-  FaMailBulk,
-  FaMailchimp,
-  FaEnvelope,
-  FaEnvelopeSquare,
-} from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import image2 from "../images/image2.png";
 import Image from "next/image";
-import getConfig from "next/config";
 import { Fade } from "react-awesome-reveal";
+import { useRef, useEffect } from "react";
+import Typed from "typed.js";
 
 type Props = {};
 
@@ -20,6 +11,13 @@ interface Icon {
   children: any;
   className?: string;
 }
+
+type TypedTextProps = {
+  strings: string[];
+  typeSpeed?: number;
+  backSpeed?: number;
+  loop?: boolean;
+};
 
 const ClickableIcon = ({ children }: Icon) => {
   return (
@@ -29,6 +27,31 @@ const ClickableIcon = ({ children }: Icon) => {
   );
 };
 
+const TypedText: React.FC<TypedTextProps> = ({
+  strings,
+  typeSpeed = 60,
+  backSpeed = 30,
+  loop = false,
+}) => {
+  const typedRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const typed = new Typed(typedRef.current!, {
+      strings,
+      typeSpeed,
+      backSpeed,
+      loop,
+    });
+
+    // Cleanup on unmount
+    return () => {
+      typed.destroy();
+    };
+  }, [strings, typeSpeed, backSpeed, loop]);
+
+  return <span ref={typedRef} />;
+};
+
 const InfoSection = (
   <Fade
     delay={1000}
@@ -36,35 +59,31 @@ const InfoSection = (
     damping={0.1}
     duration={1500}
     triggerOnce
-    className="flex justify-left 2xl:justify-center max-w-xl text-left 2xl:text-center"
+    className="flex justify-left 2xl:justify-center max-w-3xl text-left 2xl:text-center"
   >
     {/* Header */}
-    <p className="font-bold text-6xl md:text-7xl text-gray-800 dark:text-white mb-3">
-      Hi, I am{" "}
-      <span className="bg-gradient-to-r from-green-400 to-[--color-theme] bg-clip-text text-transparent">
-        Patrik.
-      </span>
+    <p className="font-semibold text-7xl lg:text-8xl dark:text-white mb-3">
+      Hi, I am <br />
+      <TypedText
+        strings={[
+          "Patrik.",
+          "a Software Engineer.",
+          "an Innovator.",
+          "Patrik.",
+        ]}
+      />
     </p>
-
-    {/* Main Text */}
-    <p className="font-regular text-lg text-gray-800 dark:text-gray-300">
-      My expertise lies in leading software projects to success by leveraging
-      cutting-edge technologies to solve complex customer challenges. I
-      specialize in technical project management, software development, and
-      product management, ensuring innovation and efficiency in every project I
-      undertake.
+    {/* Text */}
+    <p className="text-xl text-zinc-500 dark:text-gray-300 max-w-2xl">
+      I combine my software engineering expertise and technical project
+      management skills to create and drive innovative products.
     </p>
 
     {/* List */}
-    <div className="uppercase text-sm tracking-widest mt-4 font-regular text-black dark:text-white">
-      <p className="my-1">
-        {" "}
-        {"> "}Final Year MSc. Computer Science & Engineering.
-      </p>
-      <p className="my-1">
-        {"> "}Specialization in <u>Software Engineering</u>.
-      </p>
-      <p className="my-1">{"> "}Lund University, Sweden (QS Rank 75).</p>
+    <div className="mt-4 text-sm font-semibold uppercase text-zinc-900 dark:text-white">
+      <p className="my-1">M.Sc.Eng, Computer Science and Engineering</p>
+      <p className="my-1">Specialization: Software Engineering</p>
+      <p className="my-1">Lund University, Sweden</p>
     </div>
     <div className="flex gap-8 max-w-[330px] py-6">
       <a
@@ -113,17 +132,11 @@ const Home = (props: Props) => {
   return (
     <section
       id="home"
-      title="home-section"
-      className="grid h-screen m-0 pt-24 lg:pt-0 pb-0 justify-center"
+      className="h-[850px] pt-[120px] lg:pt-[250px] flex justify-center p-0"
     >
-      <div
-        title="container"
-        className="flex flex-col md:flex-row 2xl:flex-col-reverse max-w-5xl items-center justify-center"
-      >
-        <div title="info-section" className="md:col-span-4 lg:col-span-8">
-          {InfoSection}
-        </div>
-        <div title="image-section">{ImageSection}</div>
+      <div className="max-w-10xl flex flex-col lg:flex-row gap-10 justify-center text-center">
+        <div className="md:col-span-4 lg:col-span-8">{InfoSection}</div>
+        <div>{ImageSection}</div>
       </div>
     </section>
   );
