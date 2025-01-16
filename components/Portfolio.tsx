@@ -34,8 +34,8 @@ const Portfolio = (props: Props) => {
           <PortfolioItem
             direction="right"
             date="Oct 2024 - Present"
-            header={<>Lecture AI</>}
-            subheader={`Building an AI-powered tool to complement learning by generating audio-lectures based on uploaded PDF slides. Master every complex topic by selecting desired explanation level, save time, boost productivity, and accelerate knowledge intake and retention`}
+            header={<>Learn On-the-Go</>}
+            subheader={`Building an AI-powered tool to complement learning by generating audio-lectures based on uploaded PDF slides. Master complex topic by selecting desired explanation level, save time, boost productivity, and accelerate knowledge intake and retention`}
             icons={
               <div className="flex flex-row gap-x-4 h-8">
                 <Icons.ReactIcon />

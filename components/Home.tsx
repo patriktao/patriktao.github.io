@@ -130,7 +130,7 @@ const Home = (props: Props) => {
       className="min-h-[850px] pt-[170px] 2xl:pt-[250px] flex justify-center px-[2rem]"
     >
       <div className="flex flex-col lg:flex-row gap-y-12  gap-x-14 justify-center text-center">
-        <div className="2xl:w-[900px] h-9xl md:col-span-4 lg:col-span-8">
+        <div className="2xl:w-[1000px] h-9xl md:col-span-4 lg:col-span-8">
           {InfoSection}
         </div>
         <div>{ImageSection}</div>
