@@ -59,7 +59,7 @@ const InfoSection = (
     damping={0.1}
     duration={1500}
     triggerOnce
-    className="max-w-[70rem] flex justify-left 2xl:justify-center text-left 2xl:text-center"
+    className="max-w-[70rem] flex justify-left text-left"
   >
     {/* Header */}
     <p className="font-semibold text-7xl 2xl:text-8xl mb-3">
