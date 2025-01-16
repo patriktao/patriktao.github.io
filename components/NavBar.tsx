@@ -1,10 +1,6 @@
-import React, { useContext, useEffect } from "react";
+
 import getConfig from "next/config";
 import useScrollspy from "@/hooks/useScrollspy";
-import { Fade } from "react-awesome-reveal";
-import { replaceState } from "history-throttled";
-import { ThemeContext } from "@/contexts/ThemeContext";
-import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 
 const ids = [
   "home",
@@ -83,28 +79,6 @@ const NavBar = () => {
                 <span>Get Resume</span>
               </button>
             </a>
-            {/* Theme switcher, hidden on mobile */}
-            {/*             <label className="relative flex items-center cursor-pointer ">
-              <input
-                type="checkbox"
-                value=""
-                className="sr-only peer"
-                checked={getTheme() === "light" ? false : true}
-                onChange={themeSwitch}
-              />
-              <div className="w-[64px] h-[33px] bg-teal-100 rounded-full peer peer-focus:ring-4 peer-focus:ring-teal-300 dark:peer-focus:ring-gray-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-teal-400 after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-teal-400  after:border-teal-400 after:border after:rounded-full after:h-7 after:w-7 after:transition-all dark:border-gray-600 peer-checked:bg-teal-900 z-10">
-                <div className="grid grid-cols-2 h-8">
-                  <BsMoonStarsFill
-                    className="relative left-[38px] top-[8px] z-20 col-span-1"
-                    visibility={getTheme() === "light" ? "hidden" : "block"}
-                  />
-                  <BsSunFill
-                    className="col-span-1 relative right-[22px] top-[8px] z-20"
-                    visibility={getTheme() === "light" ? "block" : "hidden"}
-                  />
-                </div>
-              </div>
-            </label> */}
           </div>
         </div>
       </div>
