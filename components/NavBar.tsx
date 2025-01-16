@@ -15,8 +15,8 @@ const ids = [
   "portfolio",
 ];
 
-const menuItemClass = `text-lg font-medium md:hover:bg-transparent md:border-0 md:p-0  md:hover:bg-gradient-to-r from-green-400 to-[--color-theme] md:hover:bg-clip-text md:hover:text-transparent`;
-const selectedMenuItemClass = `text-lg underline font-medium md:border-0 md:p-0`;
+const menuItemClass = `font-medium md:hover:bg-transparent md:border-0 md:p-0  md:hover:bg-gradient-to-r from-green-400 to-[--color-theme] md:hover:bg-clip-text md:hover:text-transparent`;
+const selectedMenuItemClass = `underline font-medium md:border-0 md:p-0`;
 
 const NavItem = ({ name, className }: { name: string; className?: string }) => {
   const handleClick = (id: string) => {
@@ -52,12 +52,12 @@ const NavBar = () => {
         <div className="flex w-full justify-between items-center h-14">
           <a href="#home">
             <span className="text-xl font-semibold whitespace-nowrap text-black hover:bg-gradient-to-r hover:from-green-400 hover:to-[--color-theme] hover:bg-clip-text hover:text-transparent hover:scale-110 ease-out duration-100">
-                {">"} Patrik Thomas Tao
+              Patrik Thomas Tao
             </span>
           </a>
           {/* Links */}
           <div className="hidden lg:flex">
-            <ul className="flex flex-row space-x-14 text-md items-center">
+            <ul className="flex flex-row space-x-14 text-md 2xl:text-lg items-center">
               {ids.map((id) => (
                 <NavItem
                   name={capitalize(id)}
@@ -84,7 +84,7 @@ const NavBar = () => {
               </button>
             </a>
             {/* Theme switcher, hidden on mobile */}
-{/*             <label className="relative flex items-center cursor-pointer ">
+            {/*             <label className="relative flex items-center cursor-pointer ">
               <input
                 type="checkbox"
                 value=""

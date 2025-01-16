@@ -62,7 +62,7 @@ const InfoSection = (
     className="max-w-[70rem] flex justify-left 2xl:justify-center text-left 2xl:text-center"
   >
     {/* Header */}
-    <p className="font-semibold text-7xl lg:text-8xl mb-3">
+    <p className="font-semibold text-7xl 2xl:text-8xl mb-3">
       Hi, I am <br />
       <TypedText
         strings={["Patrik.", "a Software Engineer.", "an Innovator."]}
@@ -127,9 +127,9 @@ const Home = (props: Props) => {
   return (
     <section
       id="home"
-      className="min-h-[850px] pt-[120px] lg:pt-[250px] flex justify-center px-[2rem]"
+      className="min-h-[850px] pt-[170px] 2xl:pt-[250px] flex justify-center px-[2rem]"
     >
-      <div className="flex flex-col 2xl:flex-row gap-y-12 justify-center text-center">
+      <div className="flex flex-col lg:flex-row gap-y-12  gap-x-14 justify-center text-center">
         <div className="2xl:w-[900px] h-9xl md:col-span-4 lg:col-span-8">
           {InfoSection}
         </div>
