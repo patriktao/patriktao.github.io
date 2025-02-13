@@ -14,16 +14,9 @@ const WorkExperience = (props: Props) => {
           </h1>
           <Slide duration={1000}>
             <ol className="border-l border-neutral-300 md:flex md:justify-center md:gap-6 md:border-l-0 md:border-t">
-              <Timepoint date="Aug 2019" title="University Start" />
-              <Timepoint
-                date="Mar 2021 - Nov 2021"
-                title="Software Developer"
-                subtitle="Arkad"
-                text="Worked on the frontend of an career fair interaction platform during COVID-19."
-              />
               <Timepoint
                 date="Jun 2021 - Aug 2021"
-                title="Summer Data Scientist Intern"
+                title="Data Scientist Intern"
                 subtitle="Tetra Pak"
                 text="Worked with data science and assessed various IT strategies to reach business objectives."
               />

@@ -9,7 +9,7 @@ const infoSection = (
   <Fade cascade damping={0.1} duration={1000} triggerOnce direction="up">
     <h1 className="text-5xl md:text-7xl font-bold tracking-tight">About Me</h1>
     <p className="mt-2 text-lg font-regular leading-6 text-zinc-500">
-      Software Engineer, Tech Program Manager, and Innovator
+      Software Engineer, Tech. Program Manager, and Innovator
     </p>
     <p className="mt-6 mb-6 font-regular text-lg leading-8 text-zinc-700">
       I was born in Helsingborg, a coastal city located in the southern part of

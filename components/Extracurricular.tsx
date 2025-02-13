@@ -6,7 +6,10 @@ type Props = {};
 
 const Extracurricular = (props: Props) => {
   return (
-    <section id="extracurricular" className=" lg:mx-0 mt-[3rem] bg-[#f6f6f6] overflow-hidden px-[2rem]">
+    <section
+      id="extracurricular"
+      className=" lg:mx-0 mt-[3rem] bg-[#f6f6f6] overflow-hidden px-[2rem]"
+    >
       <div>
         <Fade duration={2000} triggerOnce>
           <h1 className="mb-12 text-4xl sm:text-7xl text-left lg:text-right lg:mr-[20%] font-bold">
@@ -15,9 +18,10 @@ const Extracurricular = (props: Props) => {
           <Slide duration={1000} direction="right">
             <ol className="border-l border-neutral-300 md:flex md:justify-center md:gap-6 md:border-l-0 md:border-t">
               <Timepoint
-                date="2019"
-                title="Member"
-                subtitle="Helsingkrona Sorority"
+                date="Mar 2021 - Nov 2021"
+                title="Software Developer"
+                subtitle="Arkad"
+                text="Worked on the frontend of an career fair interaction platform during COVID-19."
               />
               <Timepoint
                 date="2020"
