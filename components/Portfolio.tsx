@@ -98,15 +98,6 @@ const Portfolio = (props: Props) => {
           <PortfolioItem
             date="East Asia Student Association, Aug 2022 - Present"
             header={<>Memberflow</>}
-            headerIcon={
-              <Link
-                href="https://github.com/patriktao/Next-MemberFlow/tree/development"
-                target="_blank"
-                className="rounded-full text-2xl shadow-none shadow-gray-300 p-[5px] cursor-pointer hover:scale-110 ease-in duration-100 bg-gray-800 hover:bg-gradient-to-r hover:from-teal-500 hover:to-teal-300 shadow-lg"
-              >
-                <FaGithub className="text-white" />
-              </Link>
-            }
             subheader={`This cross-platform web- and mobile application addresses the
           current challenges of tracking memberships and member requests. We
           provide an efficient solution for buying, renewing, and cancelling
